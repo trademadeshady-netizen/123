@@ -8,7 +8,8 @@ public sealed class FarmingState : State
     private readonly BotContext _ctx;
     private readonly FarmingTask _task;
 
-    public FarmingState(BotContext ctx) { _ctx = ctx; _task = new FarmingTask(ctx); }
+    private readonly Action? _onGather;
+    public FarmingState(BotContext ctx, Action? onGather = null) { _ctx = ctx; _task = new FarmingTask(ctx); _onGather = onGather; }
 
     public override string Name => "Farming";
 
@@ -26,20 +27,28 @@ public sealed class FarmingState : State
         catch { return false; } // нет данных об игроке (загрузочный экран) - просто ничего не делаем
     }
 
-    public override void Run()
+    public override void Run() => TryRun();
+
+    /// <summary>Сообщает контроллеру, был ли уход с маршрута к траве, чтобы затем перестроить путь.</summary>
+    public bool TryRun()
     {
         try
         {
+            if (!NeedToRun()) return false;
             var me = _ctx.Objects.GetLocalPlayer();
             var best = PickBest(me);
-            if (best == null) return;                   // трав нет - вернёмся на следующем тике
+            if (best == null) return false;                   // трав нет - вернёмся на следующем тике
+            _ctx.Movement.StopMove();
+            _onGather?.Invoke();
             _task.Pulse(best);
+            return true;
         }
         catch (Exception ex)
         {
             // Трава исчезла из памяти и т.п. - не падаем, просто вернёмся к поиску цели.
-            Console.WriteLine($"[Farming] сбой, возвращаюсь к поиску: {ex.Message}");
-            _ctx.Movement.StopMove();
+            _ctx.Log($"[Farming] сбой, возвращаюсь к поиску: {ex.Message}");
+            try { _ctx.Movement.StopMove(); } catch { }
+            return true;
         }
     }
 

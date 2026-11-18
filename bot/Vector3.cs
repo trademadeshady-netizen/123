@@ -1,10 +1,10 @@
 namespace HerbBot.Math;
 
 /// <summary>
-/// Точка в 3D-мире. Сделан классом (а не struct), потому что у точки есть изменяемый
-/// тип перемещения (Ground/Flying/Swimming) и методы SetFlying/SetGround по ТЗ.
+/// Точка в 3D-мире. Структура копируется по значению, поэтому изменение типа
+/// одной точки не меняет остальные точки маршрута.
 /// </summary>
-public sealed class Vector3
+public struct Vector3
 {
     public float X { get; set; }
     public float Y { get; set; }

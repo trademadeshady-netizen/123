@@ -19,19 +19,14 @@ public sealed class EmptyWorldCollision : ICollisionProvider
 public static class MathHelper
 {
     /// <summary>Подменяется в тестах/симуляторе. Статическое поле - чтобы сигнатура TraceLine осталась как в ТЗ.</summary>
-    public static ICollisionProvider Collision { get; set; } = new EmptyWorldCollision();
+    public static ICollisionProvider Collision { get; set; } = new UnavailableCollision();
 
     /// <summary>Имитация луча. true = на пути есть стена.</summary>
     public static bool TraceLine(Vector3 from, Vector3 to)
     {
-        try { return Collision.HasObstacle(from, to); }
-        catch
-        {
-            // Если провайдер столкновений упал, безопаснее считать путь ЧИСТЫМ:
-            // иначе бот будет бесконечно "обходить" несуществующие стены.
-            // Застревание всё равно поймает MovementManager.IsStuck().
-            return false;
-        }
+        // Ошибка источника столкновений не доказывает, что путь свободен.
+        // Передаём её вызывающему коду, чтобы тот остановил движение.
+        return Collision.HasObstacle(from, to);
     }
 
     /// <summary>Угол (радианы, 0..2π) направления от from к to в горизонтальной плоскости.</summary>
@@ -60,4 +55,10 @@ public static class MathHelper
     }
 
     public static float DegToRad(float deg) => deg * MathF.PI / 180f;
+}
+
+/// <summary>Отсутствие карт не означает отсутствие препятствий.</summary>
+public sealed class UnavailableCollision : ICollisionProvider
+{
+    public bool HasObstacle(Vector3 from, Vector3 to) => throw new InvalidOperationException("Источник столкновений не подключён.");
 }

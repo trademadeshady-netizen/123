@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HerbBot", "bot\HerbBot.csproj", "{F64C1878-E75E-454D-9A1A-66DE714B58A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HerbBot.Console", "app\HerbBot.Console.csproj", "{166B00C3-A8E0-4DA7-A9D8-7DC6DF6B8C37}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CCB5279B-C674-4FE1-A031-2D5BF2ABDDF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HerbBot.Tests", "tests\HerbBot.Tests\HerbBot.Tests.csproj", "{E99194CA-E185-4C24-8E31-420E9D8FE378}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HerbBot.WinForms", "winforms\HerbBot.WinForms.csproj", "{38C0F364-A3A7-44E7-A3FC-31E5C94E541A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{A20FE8D1-6AA0-4993-BC9F-B9135B6AAC14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OffsetScanner", "tools\OffsetScanner\OffsetScanner.csproj", "{BC02D19F-0904-4405-98F9-BDA0377F2237}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F64C1878-E75E-454D-9A1A-66DE714B58A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F64C1878-E75E-454D-9A1A-66DE714B58A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F64C1878-E75E-454D-9A1A-66DE714B58A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F64C1878-E75E-454D-9A1A-66DE714B58A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{166B00C3-A8E0-4DA7-A9D8-7DC6DF6B8C37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{166B00C3-A8E0-4DA7-A9D8-7DC6DF6B8C37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{166B00C3-A8E0-4DA7-A9D8-7DC6DF6B8C37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{166B00C3-A8E0-4DA7-A9D8-7DC6DF6B8C37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E99194CA-E185-4C24-8E31-420E9D8FE378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E99194CA-E185-4C24-8E31-420E9D8FE378}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E99194CA-E185-4C24-8E31-420E9D8FE378}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E99194CA-E185-4C24-8E31-420E9D8FE378}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38C0F364-A3A7-44E7-A3FC-31E5C94E541A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38C0F364-A3A7-44E7-A3FC-31E5C94E541A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38C0F364-A3A7-44E7-A3FC-31E5C94E541A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38C0F364-A3A7-44E7-A3FC-31E5C94E541A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC02D19F-0904-4405-98F9-BDA0377F2237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC02D19F-0904-4405-98F9-BDA0377F2237}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC02D19F-0904-4405-98F9-BDA0377F2237}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC02D19F-0904-4405-98F9-BDA0377F2237}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E99194CA-E185-4C24-8E31-420E9D8FE378} = {CCB5279B-C674-4FE1-A031-2D5BF2ABDDF6}
+		{BC02D19F-0904-4405-98F9-BDA0377F2237} = {A20FE8D1-6AA0-4993-BC9F-B9135B6AAC14}
+	EndGlobalSection
+EndGlobal

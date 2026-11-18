@@ -1,0 +1,195 @@
+{
+  "generatedBy": "CodeRabbit HerbBot; template only, NOT VERIFIED",
+  "gameVersion": "3.3.5a",
+  "build": null,
+  "clientFileVersion": "",
+  "clientSha256": "",
+  "readTimeoutMs": 500,
+  "playerObject": {
+    "rootRva": null,
+    "dereferenceOffsets": [],
+    "finalOffset": null,
+    "relativeToPlayer": false
+  },
+  "x": {
+    "rootRva": null,
+    "dereferenceOffsets": [],
+    "finalOffset": null,
+    "relativeToPlayer": false
+  },
+  "y": {
+    "rootRva": null,
+    "dereferenceOffsets": [],
+    "finalOffset": null,
+    "relativeToPlayer": false
+  },
+  "z": {
+    "rootRva": null,
+    "dereferenceOffsets": [],
+    "finalOffset": null,
+    "relativeToPlayer": false
+  },
+  "mapId": {
+    "rootRva": null,
+    "dereferenceOffsets": [],
+    "finalOffset": null,
+    "relativeToPlayer": false
+  },
+  "rotation": {
+    "rootRva": null,
+    "dereferenceOffsets": [],
+    "finalOffset": null,
+    "relativeToPlayer": false
+  },
+  "guid": {
+    "rootRva": null,
+    "dereferenceOffsets": [],
+    "finalOffset": null,
+    "relativeToPlayer": false
+  },
+  "isMounted": {
+    "address": {
+      "rootRva": null,
+      "dereferenceOffsets": [],
+      "finalOffset": null,
+      "relativeToPlayer": false
+    },
+    "mask": 0
+  },
+  "isFlying": {
+    "address": {
+      "rootRva": null,
+      "dereferenceOffsets": [],
+      "finalOffset": null,
+      "relativeToPlayer": false
+    },
+    "mask": 0
+  },
+  "isInCombat": {
+    "address": {
+      "rootRva": null,
+      "dereferenceOffsets": [],
+      "finalOffset": null,
+      "relativeToPlayer": false
+    },
+    "mask": 0
+  },
+  "isGhost": {
+    "address": {
+      "rootRva": null,
+      "dereferenceOffsets": [],
+      "finalOffset": null,
+      "relativeToPlayer": false
+    },
+    "mask": 0
+  },
+  "sources": {
+    "playerObject": "НЕ ПОДТВЕРЖДЕНО; требуется проверка OffsetScanner и ручной эксперимент",
+    "x": "НЕ ПОДТВЕРЖДЕНО; требуется проверка OffsetScanner и ручной эксперимент",
+    "y": "НЕ ПОДТВЕРЖДЕНО; требуется проверка OffsetScanner и ручной эксперимент",
+    "z": "НЕ ПОДТВЕРЖДЕНО; требуется проверка OffsetScanner и ручной эксперимент",
+    "mapId": "НЕ ПОДТВЕРЖДЕНО; требуется проверка OffsetScanner и ручной эксперимент",
+    "rotation": "НЕ ПОДТВЕРЖДЕНО; требуется проверка OffsetScanner и ручной эксперимент",
+    "guid": "НЕ ПОДТВЕРЖДЕНО; требуется проверка OffsetScanner и ручной эксперимент",
+    "isMounted": "НЕ ПОДТВЕРЖДЕНО; требуется проверка OffsetScanner и ручной эксперимент",
+    "isFlying": "НЕ ПОДТВЕРЖДЕНО; требуется проверка OffsetScanner и ручной эксперимент",
+    "isInCombat": "НЕ ПОДТВЕРЖДЕНО; требуется проверка OffsetScanner и ручной эксперимент",
+    "isGhost": "НЕ ПОДТВЕРЖДЕНО; требуется проверка OffsetScanner и ручной эксперимент",
+    "health": "НЕ ПОДТВЕРЖДЕНО; адрес не задан; проверить на конкретном Wow.exe",
+    "maxHealth": "НЕ ПОДТВЕРЖДЕНО; адрес не задан; проверить на конкретном Wow.exe",
+    "speed": "НЕ ПОДТВЕРЖДЕНО; адрес не задан; проверить на конкретном Wow.exe",
+    "objectManager.manager": "НЕ ПОДТВЕРЖДЕНО; ограничители/режимы — политика HerbBot; адреса, размер, тип и маска требуют эксперимента",
+    "objectManager.firstOffset": "НЕ ПОДТВЕРЖДЕНО; ограничители/режимы — политика HerbBot; адреса, размер, тип и маска требуют эксперимента",
+    "objectManager.lastOffset": "НЕ ПОДТВЕРЖДЕНО; ограничители/режимы — политика HerbBot; адреса, размер, тип и маска требуют эксперимента",
+    "objectManager.lastInclusive": "НЕ ПОДТВЕРЖДЕНО; ограничители/режимы — политика HerbBot; адреса, размер, тип и маска требуют эксперимента",
+    "objectManager.traversal": "НЕ ПОДТВЕРЖДЕНО; ограничители/режимы — политика HerbBot; адреса, размер, тип и маска требуют эксперимента",
+    "objectManager.nextOffset": "НЕ ПОДТВЕРЖДЕНО; ограничители/режимы — политика HerbBot; адреса, размер, тип и маска требуют эксперимента",
+    "objectManager.countOffset": "НЕ ПОДТВЕРЖДЕНО; ограничители/режимы — политика HerbBot; адреса, размер, тип и маска требуют эксперимента",
+    "objectManager.stride": "НЕ ПОДТВЕРЖДЕНО; ограничители/режимы — политика HerbBot; адреса, размер, тип и маска требуют эксперимента",
+    "objectManager.recordSize": "НЕ ПОДТВЕРЖДЕНО; ограничители/режимы — политика HerbBot; адреса, размер, тип и маска требуют эксперимента",
+    "objectManager.maxObjects": "НЕ ПОДТВЕРЖДЕНО; ограничители/режимы — политика HerbBot; адреса, размер, тип и маска требуют эксперимента",
+    "objectManager.timeoutMs": "НЕ ПОДТВЕРЖДЕНО; ограничители/режимы — политика HerbBot; адреса, размер, тип и маска требуют эксперимента",
+    "objectManager.gameObjectType": "НЕ ПОДТВЕРЖДЕНО; ограничители/режимы — политика HerbBot; адреса, размер, тип и маска требуют эксперимента",
+    "objectManager.herbMask": "НЕ ПОДТВЕРЖДЕНО; ограничители/режимы — политика HerbBot; адреса, размер, тип и маска требуют эксперимента",
+    "objectManager.guid": "НЕ ПОДТВЕРЖДЕНО; ограничители/режимы — политика HerbBot; адреса, размер, тип и маска требуют эксперимента",
+    "objectManager.type": "НЕ ПОДТВЕРЖДЕНО; ограничители/режимы — политика HerbBot; адреса, размер, тип и маска требуют эксперимента",
+    "objectManager.entry": "НЕ ПОДТВЕРЖДЕНО; ограничители/режимы — политика HerbBot; адреса, размер, тип и маска требуют эксперимента",
+    "objectManager.x": "НЕ ПОДТВЕРЖДЕНО; ограничители/режимы — политика HerbBot; адреса, размер, тип и маска требуют эксперимента",
+    "objectManager.y": "НЕ ПОДТВЕРЖДЕНО; ограничители/режимы — политика HerbBot; адреса, размер, тип и маска требуют эксперимента",
+    "objectManager.z": "НЕ ПОДТВЕРЖДЕНО; ограничители/режимы — политика HerbBot; адреса, размер, тип и маска требуют эксперимента",
+    "objectManager.flags": "НЕ ПОДТВЕРЖДЕНО; ограничители/режимы — политика HerbBot; адреса, размер, тип и маска требуют эксперимента",
+    "objectManager.dynamicFlags": "НЕ ПОДТВЕРЖДЕНО; ограничители/режимы — политика HerbBot; адреса, размер, тип и маска требуют эксперимента",
+    "objectManager.herbFlagField": "Политика схемы HerbBot; проверить, существует ли подходящая маска в flags/dynamicFlags; null HerbMask оставляет entry whitelist"
+  },
+  "health": {
+    "rootRva": null,
+    "dereferenceOffsets": [],
+    "finalOffset": null,
+    "relativeToPlayer": false
+  },
+  "maxHealth": {
+    "rootRva": null,
+    "dereferenceOffsets": [],
+    "finalOffset": null,
+    "relativeToPlayer": false
+  },
+  "speed": {
+    "rootRva": null,
+    "dereferenceOffsets": [],
+    "finalOffset": null,
+    "relativeToPlayer": false
+  },
+  "objectManager": {
+    "manager": {
+      "rootRva": null,
+      "dereferenceOffsets": [],
+      "finalOffset": null,
+      "relativeToPlayer": false
+    },
+    "firstOffset": null,
+    "lastOffset": null,
+    "lastInclusive": false,
+    "traversal": "linked",
+    "nextOffset": null,
+    "countOffset": null,
+    "stride": null,
+    "recordSize": 0,
+    "maxObjects": 10000,
+    "timeoutMs": 500,
+    "gameObjectType": null,
+    "herbMask": null,
+    "guid": {
+      "offset": null,
+      "pointerOffsets": []
+    },
+    "type": {
+      "offset": null,
+      "pointerOffsets": []
+    },
+    "entry": {
+      "offset": null,
+      "pointerOffsets": []
+    },
+    "x": {
+      "offset": null,
+      "pointerOffsets": []
+    },
+    "y": {
+      "offset": null,
+      "pointerOffsets": []
+    },
+    "z": {
+      "offset": null,
+      "pointerOffsets": []
+    },
+    "flags": {
+      "offset": null,
+      "pointerOffsets": []
+    },
+    "dynamicFlags": {
+      "offset": null,
+      "pointerOffsets": []
+    },
+    "herbFlagField": "flags"
+  }
+}

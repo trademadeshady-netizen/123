@@ -10,10 +10,12 @@ public sealed class BlacklistManager
 
     public bool IsBlacklisted(ulong guid)
     {
-        if (!_expires.TryGetValue(guid, out var until)) return false;
-        if (DateTime.UtcNow < until) return true;
-        // Срок истёк - лениво удаляем, отдельный таймер не нужен.
-        _expires.TryRemove(guid, out _);
+        while (_expires.TryGetValue(guid, out var until))
+        {
+            if (DateTime.UtcNow < until) return true;
+            // Не удаляем свежий срок, если другая задача продлила его параллельно.
+            if (((ICollection<KeyValuePair<ulong, DateTime>>)_expires).Remove(new(guid, until))) return false;
+        }
         return false;
     }
 
@@ -21,7 +23,7 @@ public sealed class BlacklistManager
     {
         var now = DateTime.UtcNow;
         foreach (var kv in _expires)
-            if (kv.Value <= now) _expires.TryRemove(kv.Key, out _);
+            if (kv.Value <= now) ((ICollection<KeyValuePair<ulong, DateTime>>)_expires).Remove(kv);
     }
 
     public void Clear() => _expires.Clear();

@@ -1,0 +1,9 @@
+**/bin/
+**/obj/
+
+/herbbot.json
+/routes/
+
+/logs/
+/offset-report.json
+/profiles/client.json
